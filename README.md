@@ -137,3 +137,28 @@ x-(1/3*x+2)-(1/4*x+3)-(1/5*x+8)=0
 
 >Написать метод/функцию, который/которая на вход принимает число (int), а на выходе выдает слово “компьютер” в падеже, соответствующем указанному количеству. Например, >«25 компьютеров», «41 компьютер», «1048 компьютеров».
 
+## ***Решение:***
+```C#
+public static void WePutItInTheCorrectForm(int number)
+        {
+            string[] WordForms = {"компьютер", "компьютера", "компьютеров" };
+            
+
+
+            if (number % 100 >= 11 && number % 100 <= 14 || number % 10 == 0 || number % 10 >= 5)
+
+            {
+                Console.WriteLine($"{number} " + $"{WordForms[2]}");
+            }
+            else if (number % 10 == 1)
+            {
+                Console.WriteLine($"{number} " + $"{WordForms[0]}");
+               
+            }
+            else
+            {
+                Console.WriteLine($"{number} " + $"{WordForms[1]}");
+            }
+
+        }
+```
