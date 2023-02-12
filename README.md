@@ -233,3 +233,26 @@ public static void OutputAnArray()
 > + В последней строке между числами ровно по одному пробелу должно выводиться. 
 >
 > + В каждом столбце числа должны быть выровнены по правому краю.
+
+```C#
+public static void OutputOfTheMultiplicationTable(int number)
+        {
+            var table = new int[10, 10];
+            for (int i = 1; i <= number; ++i)
+            {
+                for (int j = 1; j <= number; ++j)
+                {
+                    table[i, j] = i * j;
+                }
+            }
+            for (int i = 1; i <= number; ++i)
+            {
+                for (int j = 1; j <= number; ++j)
+                {
+                    Console.Write(" {0, 3}", table[i, j]);
+                }
+                Console.WriteLine();
+            }
+
+        }
+```
