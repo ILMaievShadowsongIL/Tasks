@@ -104,6 +104,9 @@ x-(1/3*x+2)-(1/4*x+3)-(1/5*x+8)=0
 
 ## ***Решение:***
 
+## ***Задача 1***
+
+
 ```C#
   public static void ChangingTheLine(string[] array)
         {
