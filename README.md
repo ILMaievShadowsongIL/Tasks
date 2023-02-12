@@ -166,3 +166,21 @@ public static void WePutItInTheCorrectForm(int number)
 ## ***Задача 4***
 
 >Написать метод/функцию, который/которая на вход принимает целое число, а на выходе возвращает то, является ли число простым (не имеет делителей кроме 1 и самого себя).
+
+## ***Решение:***
+```C#
+public static bool CheckingTheNumber(int number)
+        {
+
+            if (number > 1)
+            {
+                for (int i = number - 1; i > 1; i--)
+                {
+                    if ((number % i) == 0)
+                        return false;
+                }
+                return true;
+            }
+            return false;
+        }
+```
