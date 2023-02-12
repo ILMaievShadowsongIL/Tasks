@@ -234,6 +234,8 @@ public static void OutputAnArray()
 >
 > + В каждом столбце числа должны быть выровнены по правому краю.
 
+## ***Решение:***
+
 ```C#
 public static void OutputOfTheMultiplicationTable(int number)
         {
