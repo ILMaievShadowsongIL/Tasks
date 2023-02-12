@@ -125,3 +125,11 @@ x-(1/3*x+2)-(1/4*x+3)-(1/5*x+8)=0
 >27 => 25, 27.8 => 30, 41.7 => 40.
 
 ## ***Решение:***
+```C#
+ public static int RoundingTheNumber(float number)
+
+        {
+            return Convert.ToInt32(Math.Round(number, 5));
+        }
+```        
+        
