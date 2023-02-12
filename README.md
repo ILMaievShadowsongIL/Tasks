@@ -102,3 +102,13 @@ x-(1/3*x+2)-(1/4*x+3)-(1/5*x+8)=0
 >
 >«Москва, Санкт-Петербург, Воронеж.» 
 
+## ***Решение:***
+
+```C#
+  public static void ChangingTheLine(string[] array)
+        {
+            string separatedNames = string.Join(",", array);
+            Console.Write($"{separatedNames}. ");
+        }
+```
+
